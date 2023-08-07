@@ -1,0 +1,29 @@
+.nav-container {
+    background-color: rgb(230, 236, 236);
+    display: flex;
+
+
+}
+
+.quickLinks {
+    display: flex;
+    margin-left: 45rem;
+
+}
+
+.title {
+    margin-left: 2rem;
+
+}
+
+.icon-name {
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.icons {
+    margin-left: 3rem;
+    margin-top: 14px;
+    justify-content: space-between;
+    align-items: flex-start
+}
