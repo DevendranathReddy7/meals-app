@@ -16,3 +16,13 @@
     outline: none;
     color: black;
 }
+
+.add-cart-div {
+    display: inline-flex;
+    height: 2rem;
+    width: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+
+}

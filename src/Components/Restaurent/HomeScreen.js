@@ -1,6 +1,12 @@
 import './HomeScreen.css'
 import AddButton from '../AddButton/AddButton'
+import { useState } from 'react'
 const HomeScreen = () => {
+    const [itemsInCart, setItemsInCart] = useState('')
+
+    const addToCartHandler = () => {
+
+    }
     return (
         <>
 
@@ -12,7 +18,7 @@ const HomeScreen = () => {
                         <p>Idli is made from ground rice or rice flour mixed with ground urad dal, salt.</p>
                     </div>
                     <div>
-                        <AddButton />
+                        <AddButton onClick={addToCartHandler} />
                     </div>
                 </div>
                 <hr />
