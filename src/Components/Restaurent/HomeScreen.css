@@ -1,0 +1,16 @@
+.dish-container {
+    background-color: rgb(241, 199, 240);
+    border-radius: 8px;
+    margin: 30px 10rem;
+    padding: 10px
+}
+
+.dish-item {
+    line-height: 1;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
