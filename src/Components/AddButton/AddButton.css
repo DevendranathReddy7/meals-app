@@ -9,6 +9,7 @@
     cursor: pointer;
     outline: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .add:hover {
@@ -24,5 +25,5 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 2px;
-
+    cursor: pointer;
 }
