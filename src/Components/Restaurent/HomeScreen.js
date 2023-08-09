@@ -1,8 +1,13 @@
 import './HomeScreen.css'
 import AddButton from '../AddButton/AddButton'
+import { useState } from 'react'
 
 const HomeScreen = (props) => {
-
+    const [counter, setCounter] = useState(0)
+    const countHandler = (value) => {
+        setCounter(value)
+        props.onCount(counter)
+    }
     return (
         <>
             <div className="dish-container">
@@ -15,7 +20,7 @@ const HomeScreen = (props) => {
                                 <p>{eachItem.desc}</p>
                             </div>
                             <div>
-                                <AddButton />
+                                <AddButton onCount={countHandler} />
                             </div>
                         </div>
                         <hr />

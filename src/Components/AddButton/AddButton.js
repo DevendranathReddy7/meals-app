@@ -4,13 +4,15 @@ const AddButton = (props) => {
     var [count, setCount] = useState(0)
     const addItem = () => {
         setCount(prev => prev + 1)
+        props.onCount(prev => prev + 1)
     }
-    console.log(count)
     const reduceHandle = () => {
         setCount(prev => prev - 1)
+        props.onCount(prev => prev - 1)
     }
     const increaseandle = () => {
         setCount(prev => prev + 1)
+        props.onCount(prev => prev + 1)
     }
     return (
         <>

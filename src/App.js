@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Navbar from './Components/NavBar/Navbar.js';
 import HomeScreen from './Components/Restaurent/HomeScreen';
@@ -21,11 +22,15 @@ const items = [
 ]
 
 function App() {
+  const [totalCartItems, setTotalCartItems] = useState('')
+  const countHandler = (value) => {
+    setTotalCartItems(value)
+  }
 
   return (
     <div className='App'>
-      <Navbar />
-      <HomeScreen items={items} />
+      <Navbar cartValue={totalCartItems} />
+      <HomeScreen items={items} onCount={countHandler} />
     </div>
   );
 }

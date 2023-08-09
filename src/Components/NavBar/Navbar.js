@@ -34,7 +34,7 @@ const MenuBar = (props) => {
                             <img src={cart} alt="cart" className='icons' />
                         </div>
                         <div className='icon-name'>
-                            <p>Cart {props.count || undefined}</p>
+                            <p >Cart<sapn className={props.cartValue > 0 ? 'cartValue' : ''}>{props.cartValue || undefined}</sapn></p>
                         </div>
                     </div>
 
