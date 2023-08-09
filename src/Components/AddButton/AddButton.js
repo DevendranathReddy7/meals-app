@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './AddButton.css'
 const AddButton = (props) => {
     var [count, setCount] = useState(0)
@@ -14,6 +14,9 @@ const AddButton = (props) => {
         setCount(prev => prev + 1)
         props.onCount(prev => prev + 1)
     }
+    useEffect(() => {
+        props.onCount(count)
+    }, [count])
     return (
         <>
             {count === 0 ? <div className='add-button-div'>
