@@ -22,7 +22,7 @@ const items = [
 ]
 
 function App() {
-  const [totalCartItems, setTotalCartItems] = useState('')
+  const [totalCartItems, setTotalCartItems] = useState(0)
   const countHandler = (value) => {
     setTotalCartItems(value)
   }
